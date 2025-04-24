@@ -20,7 +20,7 @@ export const projects: Project[] = [
     description:
       'A Visual Studio Code themed developer portfolio built with Next.js and CSS Modules.',
     logo: '/logos/vsc.svg',
-    link: 'https://github.com/itsnitinr/vscode-portfolio',
+    link: 'https://github.com/divyanshnext/portfolio',
     slug: 'vscode-portfolio',
   },
   {
