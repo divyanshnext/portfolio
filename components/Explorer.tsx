@@ -43,7 +43,7 @@ const Explorer = memo(() => {
           {explorerItems.map((item) => (
             <Link href={item.path} key={item.name}>
               <div className={styles.file}>
-                <Image src={item.icon} alt={item.name} height={18} width={18} />{' '}
+                <Image src={item.icon} alt={item.name} width={18} height={18} />
                 <p>{item.name}</p>
               </div>
             </Link>
@@ -53,5 +53,8 @@ const Explorer = memo(() => {
     </div>
   );
 });
+
+// Fix ESLint display name warning
+Explorer.displayName = 'Explorer';
 
 export default Explorer;

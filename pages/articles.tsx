@@ -1,4 +1,5 @@
 import styles from '@/styles/ArticlesPage.module.css';
+import Image from 'next/image';
 
 const SkillsPage = () => {
   const skills = [
@@ -23,7 +24,13 @@ const SkillsPage = () => {
       <div className={styles.container}>
         {skills.map((skill, index) => (
           <div key={index} className={styles.skillCard}>
-            <img src={skill.icon} alt={skill.name} className={styles.skillIcon} />
+            <Image
+              src={skill.icon}
+              alt={skill.name}
+              width={40}
+              height={40}
+              className={styles.skillIcon}
+            />
             <span>{skill.name}</span>
           </div>
         ))}
@@ -31,5 +38,7 @@ const SkillsPage = () => {
     </div>
   );
 };
+
+SkillsPage.displayName = 'SkillsPage';
 
 export default SkillsPage;

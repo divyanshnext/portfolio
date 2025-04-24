@@ -36,7 +36,7 @@ const Sidebar = memo(() => {
           <Link href={path} key={path}>
             <div
               className={`${styles.iconContainer} ${
-                router.pathname === path && styles.active
+                router.pathname === path ? styles.active : ''
               }`}
             >
               <Icon
@@ -54,9 +54,14 @@ const Sidebar = memo(() => {
       </div>
       <div className={styles.sidebarBottom}>
         {sidebarBottomItems.map(({ Icon, path }) => (
-          <div className={styles.iconContainer} key={path}>
-            <Link href={path}>
+          <Link href={path} key={path}>
+            <div
+              className={`${styles.iconContainer} ${
+                router.pathname === path ? styles.active : ''
+              }`}
+            >
               <Icon
+                size={16}
                 fill={
                   router.pathname === path
                     ? 'rgb(225, 228, 232)'
@@ -64,12 +69,14 @@ const Sidebar = memo(() => {
                 }
                 className={styles.icon}
               />
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </div>
     </aside>
   );
 });
+
+Sidebar.displayName = 'Sidebar';
 
 export default Sidebar;
