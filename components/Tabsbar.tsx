@@ -11,6 +11,7 @@ const Tabsbar = memo(() => {
     { icon: '/logos/json_icon.svg', filename: 'skills.json', path: '/articles' },
     { icon: '/logos/json_icon.svg', filename: 'certificates.json', path: '/certificates' },
     { icon: '/logos/json_icon.svg', filename: 'achievements.json', path: '/achievements' },
+    { icon: '/logos/json_icon.svg', filename: 'education.json', path: '/education' },
     { icon: '/logos/markdown_icon.svg', filename: 'github.md', path: '/github' },
     { icon: '/logos/css_icon.svg', filename: 'contact.css', path: '/contact' },
   ];

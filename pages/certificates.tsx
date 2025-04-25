@@ -1,15 +1,5 @@
-import styles from '@/styles/ArticlesPage.module.css';
-
-type Certificate = {
-  title: string;
-  organization: string;
-  duration: string;
-  link: string;
-  image: string;
-  description?: string[]; // 👈 optional
-};
-
-const certificates: Certificate[] = require('@/data/certificates.json');
+import styles from '@/styles/CertificatesPage.module.css';
+import certificates from '@/data/certificates.json';
 
 const CertificatesPage = () => {
   return (
@@ -20,23 +10,21 @@ const CertificatesPage = () => {
       </p>
       <div className={styles.container}>
         {certificates.map((certificate, index) => (
-          <div key={index} className={styles.skillCard}>
-            <h2>{certificate.title}</h2>
-            <p>{certificate.organization}</p>
-            <p>{certificate.duration}</p>
-            {certificate.description && (
-              <ul>
-                {certificate.description.map((desc, i) => (
-                  <li key={i}>{desc}</li>
-                ))}
-              </ul>
-            )}
+          <div key={index} className={styles.certificateCard}>
             <img
               src={certificate.image}
               alt={certificate.title}
               className={styles.certificateImage}
             />
-            <a href={certificate.link} target="_blank" rel="noopener noreferrer">
+            <h2 className={styles.certificateTitle}>{certificate.title}</h2>
+            <p>{certificate.organization}</p>
+            <p>{certificate.duration}</p>
+            <a
+              href={certificate.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.certificateLink}
+            >
               View Certificate
             </a>
           </div>

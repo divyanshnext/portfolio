@@ -15,6 +15,7 @@ const explorerItems = [
   { name: 'achievements.json', path: '/achievements', icon: '/logos/json_icon.svg' },
   { name: 'github.md', path: '/github', icon: '/logos/markdown_icon.svg' },
   { name: 'contact.css', path: '/contact', icon: '/logos/css_icon.svg' },
+  { name: 'education.json', path: '/education', icon: '/logos/json_icon.svg' },
 ];
 
 const Explorer = memo(() => {

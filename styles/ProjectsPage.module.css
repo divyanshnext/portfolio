@@ -30,6 +30,25 @@
   line-height: 1.6;
 }
 
+.card {
+  background: var(--article-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;

@@ -7,10 +7,11 @@
 
 .container {
   margin-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: start;
 }
 
 .achievementCard {
@@ -37,4 +38,63 @@
 .achievementDescription {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.certificateCard {
+  background: var(--article-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.certificateCard:hover {
+  transform: translateY(-5px);
+}
+
+.certificateImage {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.certificateTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.certificateLink {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.certificateLink:hover {
+  text-decoration: underline;
+}
+
+.skillCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--article-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+}
+
+.skillIcon {
+  width: 40px;
+  height: 40px;
 }
