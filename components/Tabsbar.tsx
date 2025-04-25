@@ -9,6 +9,8 @@ const Tabsbar = memo(() => {
     { icon: '/logos/html_icon.svg', filename: 'about.html', path: '/about' },
     { icon: '/logos/js_icon.svg', filename: 'projects.js', path: '/projects' },
     { icon: '/logos/json_icon.svg', filename: 'skills.json', path: '/articles' },
+    { icon: '/logos/json_icon.svg', filename: 'certificates.json', path: '/certificates' },
+    { icon: '/logos/json_icon.svg', filename: 'achievements.json', path: '/achievements' },
     { icon: '/logos/markdown_icon.svg', filename: 'github.md', path: '/github' },
     { icon: '/logos/css_icon.svg', filename: 'contact.css', path: '/contact' },
   ];
