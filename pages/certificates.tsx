@@ -1,5 +1,15 @@
 import styles from '@/styles/ArticlesPage.module.css';
-import certificates from '@/data/certificates.json';
+
+type Certificate = {
+  title: string;
+  organization: string;
+  duration: string;
+  link: string;
+  image: string;
+  description?: string[]; // 👈 optional
+};
+
+const certificates: Certificate[] = require('@/data/certificates.json');
 
 const CertificatesPage = () => {
   return (
