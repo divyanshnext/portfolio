@@ -1,27 +1,43 @@
+
 # vscode-portfolio
-[![Open is Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/itsnitinr/vscode-portfolio)
 
-A Visual Studio Code themed developer portfolio website built with Next.js and deployed on Vercel.
+A **Visual Studio Code-themed developer portfolio website** built with [Next.js](https://nextjs.org) and deployed on [Vercel](https://vercel.com).
 
-![vscode-portfolio banner](https://imgur.com/JXJ9mpO.gif)
+---
 
-## Features Roadmap
+## 🚀 Features Roadmap
 
-- [ ] Themes and customizations
+- **Themes and Customizations**
   - [x] GitHub Dark (default)
-  - [ ] One Dark Pro
+  - [ ] One Dark Pro (coming soon)
   - [x] Dracula
   - [x] Ayu
   - [x] Nord
-- [ ] Interactive custom terminal
 
-For other features and themes suggestions, please open an issue.
+- **Interactive Terminal** (coming soon)
 
-## Environment Variables
+📢 Have a theme or feature in mind? [Open an issue](https://github.com/itsnitinr/vscode-portfolio/issues) to suggest it!
 
-For fetching your articles from dev.to, create an `.env.local` file inside the project directory. Check the `.env.local.example` file for more information.
+---
 
-## Running Development Server
+## 🛠 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/divyanshnext/portfolio.git
+cd vscode-portfolio
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Start the Development Server
 
 ```bash
 npm run dev
@@ -29,21 +45,27 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view your portfolio in the browser.
 
-All VSCode related components can be found in the `components` folder. To change the content of the portfolio, check out the `pages` folder. To add or remove pages, modify `components/Sidebar.jsx` and `components/Tabsbar.jsx`.
+---
 
-## Next.js Resources
+## 🔧 Customize Your Portfolio
 
-To learn more about Next.js, take a look at the following resources:
+- **VSCode-themed components**: Explore the `components/` directory.
+- **Portfolio content**: Edit files inside the `pages/` folder.
+- **Navigation tabs and sidebar**: Modify `components/Sidebar.jsx` and `components/Tabsbar.jsx`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/)
+## 🌐 Environment Variables
 
-## Deploy on Vercel
+To enable fetching articles from your [dev.to](https://dev.to/) account:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a `.env.local` file in the root directory.
+2. Refer to `.env.local.example` for the required variables and format.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
