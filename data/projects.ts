@@ -23,20 +23,4 @@ export const projects: Project[] = [
     link: 'https://github.com/divyanshnext/portfolio',
     slug: 'vscode-portfolio',
   },
-  {
-    title: 'Subtrackt',
-    description:
-      'A simple and elegant way to track your subscriptions and save money.',
-    logo: '/logos/subtrackt.svg',
-    link: 'https://github.com/itsnitinr/subtrackt',
-    slug: 'subtrackt',
-  },
-  {
-    title: 'Coolify Deployments',
-    description:
-      'VSCode extension to track and deploy your Coolify applications.',
-    logo: '/logos/coolify.svg',
-    link: 'https://github.com/itsnitinr/coolify-vscode-extension',
-    slug: 'coolify-vscode-extension',
-  },
 ];
